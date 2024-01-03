@@ -14,7 +14,7 @@ repo init --depth=1 -u https://github.com/minimal-manifest-twrp/platform_manifes
 
 ## Clone repo
 ```
-git clone https://gitlab.com/EdwinT2/android_device_samsung_a12s -b android-12.1 device/samsung/a12s
+git clone https://github.com/EdwinT2/android_device_samsung_a12s -b android-12.1 device/samsung/a12s
 ```
 ## Sync repo
 ```
