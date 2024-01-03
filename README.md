@@ -1,4 +1,4 @@
-## Recovery Device Tree for the Samsung Galaxy A12 Nacho
+## Recovery Device Tree for the Samsung Galaxy A12 Nacho (a12s)
 
 ## How To Compile
 
