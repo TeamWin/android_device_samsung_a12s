@@ -5,7 +5,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-MKBOOTIMG := device/samsung/a12s/mkbootimg
+MKBOOTIMG := device/samsung/a13/mkbootimg
 
 FLASH_IMAGE_TARGET ?= $(PRODUCT_OUT)/recovery.tar
 
@@ -22,3 +22,5 @@ $(INSTALLED_RECOVERYIMAGE_TARGET): $(MKBOOTIMG) $(recovery_ramdisk) $(recovery_k
 	$(hide) echo -n "SEANDROIDENFORCE" >> $@
 	$(hide) $(call assert-max-image-size,$@,$(BOARD_RECOVERYIMAGE_PARTITION_SIZE),raw)
 	@echo "Made recovery image: $@"
+	$(hide) tar -C $(PRODUCT_OUT) -c recovery.img > $(FLASH_IMAGE_TARGET)
+	@echo "Made flashable $(FLASH_IMAGE_TARGET): $@"
