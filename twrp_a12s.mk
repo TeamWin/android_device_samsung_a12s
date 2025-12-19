@@ -12,6 +12,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit some common Omni stuff.
 $(call inherit-product, vendor/twrp/config/common.mk)
 
+# Inherit fox flags
+$(call inherit-product-if-exists, $(DEVICE_PATH)/fox_a12s.mk)
+
 # Inherit from a12s device
 $(call inherit-product, device/samsung/a12s/device.mk)
 
