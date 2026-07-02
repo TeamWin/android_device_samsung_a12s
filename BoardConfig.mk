@@ -143,6 +143,9 @@ TW_EXCLUDE_PYTHON := true
 # Making the recovery.img smaller
 BOARD_HAS_NO_REAL_SDCARD := true
 
+# Tiuch fix for incell panels (not yet official, it is a patch on the teamwin gerrit)
+TW_SAMSUNG_TSP_TOUCH_FIX := true
+
 # USB/MTP/ADB
 TW_USE_NEW_MINADBD := true
 TARGET_USES_LOGD := true
