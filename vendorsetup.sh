@@ -67,5 +67,3 @@ fi
 #
 
 chmod a+x device/samsung/a12s/mkbootimg
-repopick 8695
-repopick 8710
