@@ -14,7 +14,3 @@ odm                                             /odm                  f2fs      
 /dev/block/by-name/misc                         /misc                 emmc      defaults               defaults,first_stage_mount
 /devices/platform/13500000.dwmmc2/mmc_host*     auto                  auto      default               voldmanaged=sdcard:auto
 /devices/platform/13600000.usb* auto                  vfat      default               voldmanaged=usb:auto
-
-
-/boot       emmc    /dev/block/by-name/boot       flags=display=Boot
-/recovery   emmc    /dev/block/by-name/recovery   flags=display=recovery
