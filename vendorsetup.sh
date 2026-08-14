@@ -17,6 +17,7 @@
 #
 # 	Please maintain this if you use this script or any part of it
 #
+# thislineisaplaceholder
 
 #set -o xtrace
 FDEVICE="a12s"
@@ -44,7 +45,6 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export ALLOW_MISSING_DEPENDENCIES=true
 	export FOX_VANILLA_BUILD=1
 	export FOX_NO_SAMSUNG_SPECIAL=1
-	export FOX_ENABLE_APP_MANAGER=1
 	export FOX_USE_BASH_SHELL=1
 	export FOX_ASH_IS_BASH=1
 	export FOX_USE_TAR_BINARY=1
